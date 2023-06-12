@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package notificatoinserver;
+
+option go_package = "github.com/onemgvv/notificatoinserver/api/gen/go/;notificationserver";
+
+message Error {
+  int64  code    = 1;
+  string message = 2;
+}
+
+message NotifyRequest {
+	string userId = 1;
+	int64  status = 2;
+	string header = 3;
+	string body   = 4;
+}
+
+message NotifyResponse {
+  bool   success = 1;
+  string comment = 2;
+  Error  error   = 3;
+}
+
+service NotificationService {
+ rpc Notify(NotifyRequest) returns (NotifyResponse) {}
+}
