@@ -61,7 +61,7 @@ func (n Notification) GetInsertData() []interface{} {
 	}
 }
 
-func MessageFromDomain(message domain.Notification) *Notification {
+func NotificationFromDomain(message domain.Notification) *Notification {
 	return &Notification{
 		UserID:   message.UserID,
 		StatusID: int(message.Status),
