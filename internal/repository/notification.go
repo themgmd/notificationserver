@@ -3,8 +3,9 @@ package repository
 import (
 	"context"
 	"fmt"
-	"notifier/internal/repository/dao"
 	"time"
+
+	"github.com/onemgvv/notificationserver/internal/repository/dao"
 
 	"github.com/Masterminds/squirrel"
 	"github.com/jmoiron/sqlx"

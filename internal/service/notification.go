@@ -2,7 +2,8 @@ package service
 
 import (
 	"context"
-	"notifier/internal/repository/dao"
+
+	"github.com/onemgvv/notificationserver/internal/repository/dao"
 )
 
 type notificationRepo interface {

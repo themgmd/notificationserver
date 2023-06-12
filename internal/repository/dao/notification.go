@@ -1,8 +1,9 @@
 package dao
 
 import (
-	"notifier/internal/domain"
 	"time"
+
+	"github.com/onemgvv/notificationserver/internal/domain"
 
 	"github.com/google/uuid"
 	"github.com/guregu/null"
